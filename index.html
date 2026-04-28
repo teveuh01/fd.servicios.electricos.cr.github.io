@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FD Servicios Eléctricos - Soluciones eléctricas de alta precisión en Comodoro Rivadavia">
+  <title>FD Servicios Eléctricos • Fabián Duarte</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Anton&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Anton&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    
+    .hero-bg {
+      background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
+    }
+    .gold-line {
+      height: 3px;
+      background: linear-gradient(to right, transparent, #ffd700, transparent);
+    }
+  </style>
+</head>
+<body class="bg-[#001f3f] text-white">
+
+  <!-- NAVBAR -->
+  <nav class="bg-[#001f3f]/95 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <img src="logo.png" alt="FD Servicios Eléctricos" class="h-12 sm:h-14 w-auto">
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#inicio" class="hover:text-[#ffd700] transition-colors">INICIO</a>
+        <a href="#servicios" class="hover:text-[#ffd700] transition-colors">SERVICIOS</a>
+        <a href="#experiencia" class="hover:text-[#ffd700] transition-colors">EXPERIENCIA</a>
+        <a href="#contacto" class="hover:text-[#ffd700] transition-colors">CONTACTO</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero-bg min-h-screen flex items-center py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div class="flex justify-center md:justify-end">
+        <img src="logo.png" alt="FD Servicios Eléctricos" class="max-w-[280px] sm:max-w-[380px] md:max-w-lg w-full drop-shadow-2xl">
+      </div>
+      <div class="max-w-md mx-auto md:mx-0">
+        <div class="bg-[#0a2540] border border-[#ffd700]/20 rounded-3xl p-6 sm:p-8 shadow-2xl">
+          <div class="flex justify-between items-start mb-8">
+            <img src="isologo.png" alt="FD" class="h-24 sm:h-28 w-auto">
+            <div class="text-right">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#ffd700] to-amber-400 rounded-2xl flex items-center justify-center shadow-inner">
+                <i class="fa-solid fa-bolt text-4xl sm:text-5xl text-[#001f3f]"></i>
+              </div>
+              <div class="mt-3 text-[#ffd700] text-xs font-bold tracking-widest">18 AÑOS<br>EXPERIENCIA</div>
+            </div>
+          </div>
+          <div class="gold-line mb-8"></div>
+          <p class="text-center text-sm font-medium tracking-widest text-white/80">
+            INSTALACIONES • REPARACIONES • NORMA VIGENTE
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="py-16 md:py-20 bg-[#001426]">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="inline-flex items-center gap-4 bg-[#ffd700] text-[#001f3f] px-8 py-4 rounded-3xl mb-8">
+        <i class="fa-solid fa-medal text-3xl"></i>
+        <span class="text-4xl font-bold">18 AÑOS</span>
+      </div>
+      <img src="isologo.png" alt="FD" class="mx-auto mb-8 w-44 md:w-52 opacity-90">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">EXPERIENCIA QUE ILUMINA CONFIANZA</h2>
+      <p class="max-w-2xl mx-auto text-base md:text-lg text-white/80 px-4">
+        Más de 18 años ofreciendo soluciones eléctricas profesionales, seguras y de alta precisión en Comodoro Rivadavia y toda la zona sur.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="gold-line mx-auto w-24 mb-6"></div>
+      <h2 class="text-4xl font-bold text-center mb-3">NUESTROS SERVICIOS</h2>
+      <p class="text-[#ffd700] text-center mb-12">Soluciones eléctricas de alta precisión</p>
+      
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#ffd700]/50 transition-all group">
+          <i class="fa-solid fa-plug-circle-bolt text-5xl text-[#ffd700] mb-6 group-hover:scale-110 transition-transform"></i>
+          <h4 class="text-2xl font-semibold mb-3">Instalaciones Eléctricas</h4>
+          <p class="text-white/70">Nuevas instalaciones residenciales, comerciales e industriales cumpliendo norma vigente.</p>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#ffd700]/50 transition-all group">
+          <i class="fa-solid fa-screwdriver-wrench text-5xl text-[#ffd700] mb-6 group-hover:scale-110 transition-transform"></i>
+          <h4 class="text-2xl font-semibold mb-3">Reparaciones y Mantenimiento</h4>
+          <p class="text-white/70">Diagnóstico profesional y reparaciones rápidas de fallas eléctricas.</p>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#ffd700]/50 transition-all group">
+          <i class="fa-solid fa-shield-halved text-5xl text-[#ffd700] mb-6 group-hover:scale-110 transition-transform"></i>
+          <h4 class="text-2xl font-semibold mb-3">Auditorías Técnicas</h4>
+          <p class="text-white/70">Puestas a tierra, certificaciones y cumplimiento normativo completo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARJETA DIGITAL - TOTALMENTE RESPONSIVE -->
+  <section id="contacto" class="py-16 md:py-20 bg-[#001426]">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="gold-line mx-auto w-24 mb-6"></div>
+      <h2 class="text-4xl font-bold mb-12">TARJETA DIGITAL</h2>
+      
+      <div class="max-w-xl mx-auto bg-white text-[#001f3f] rounded-3xl overflow-hidden shadow-2xl">
+        <div class="bg-[#001f3f] text-[#ffd700] py-4 text-sm font-bold tracking-widest">FD SERVICIOS ELÉCTRICOS</div>
+        
+        <div class="p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
+          <div class="text-left">
+            <h3 class="text-5xl font-bold mb-2">Fabián Duarte</h3>
+            <p class="text-xl text-gray-600 mb-8">ELECTRICISTA</p>
+            <div class="space-y-6">
+              <a href="tel:2974777265" class="flex items-center gap-4 hover:text-[#ffd700] transition-colors">
+                <i class="fa-solid fa-phone text-3xl text-[#ffd700]"></i>
+                <div class="text-3xl font-semibold">(297) 477-7265</div>
+              </a>
+              <a href="mailto:fd.servicios.electricos.cr@gmail.com" class="flex items-center gap-4 hover:text-[#ffd700] transition-colors">
+                <i class="fa-solid fa-envelope text-3xl text-[#ffd700]"></i>
+                <div class="text-lg font-medium">fd.servicios.electricos.cr@gmail.com</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- QR + Texto arriba -->
+          <div class="flex flex-col items-center">
+            <p class="text-xs text-gray-500 font-medium mb-4 text-center tracking-wider">ESCANEA PARA GUARDAR CONTACTO</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=195x195&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ADuarte%3BFabi%C3%A1n%0AORG%3AFD%20Servicios%20El%C3%A9ctricos%0ATITLE%3AElectricista%0ATEL%3A2974777265%0AEMAIL%3Afd.servicios.e

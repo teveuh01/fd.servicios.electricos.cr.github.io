@@ -1,135 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FD Servicios Eléctricos - Soluciones eléctricas de alta precisión en Comodoro Rivadavia">
-  <title>FD Servicios Eléctricos • Fabián Duarte</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Anton&display=swap" rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Anton&display=swap');
-    body { font-family: 'Inter', system-ui, sans-serif; }
-    
-    .hero-bg {
-      background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
-    }
-    .gold-line {
-      height: 3px;
-      background: linear-gradient(to right, transparent, #ffd700, transparent);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD Servicios Eléctricos | Soluciones Eléctricas de Alta Precisión</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        .hero-title { font-family: 'Space Grotesk', sans-serif; }
+        .logo-nav { height: 72px; object-fit: contain; }
+        .logo-footer { height: 165px; object-fit: contain; }
+        .hero-photo { border-radius: 20px; width: 100%; max-height: 460px; object-fit: contain; }
+
+        /* SCROLL SUAVE + OFFSET PARA NAVBAR FIJA */
+        section { scroll-margin-top: 90px; }
+
+        .nav-link { transition: all 0.3s; }
+        .nav-link:hover { color: #facc15; }
+    </style>
 </head>
-<body class="bg-[#001f3f] text-white">
+<body>
 
-  <!-- NAVBAR -->
-  <nav class="bg-[#001f3f]/95 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-      <img src="logo.png" alt="FD Servicios Eléctricos" class="h-12 sm:h-14 w-auto">
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-        <a href="#inicio" class="hover:text-[#ffd700] transition-colors">INICIO</a>
-        <a href="#servicios" class="hover:text-[#ffd700] transition-colors">SERVICIOS</a>
-        <a href="#experiencia" class="hover:text-[#ffd700] transition-colors">EXPERIENCIA</a>
-        <a href="#contacto" class="hover:text-[#ffd700] transition-colors">CONTACTO</a>
-      </div>
-    </div>
-  </nav>
+    <!-- NAVBAR -->
+    <nav class="bg-[#001f3f] text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <picture>
+                <source srcset="isologo.webp" type="image/webp">
+                <img src="isologo.png" alt="FD Servicios Eléctricos" class="logo-nav">
+            </picture>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero-bg min-h-screen flex items-center py-12 md:py-20">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-      <div class="flex justify-center md:justify-end">
-        <img src="logo.png" alt="FD Servicios Eléctricos" class="max-w-[280px] sm:max-w-[380px] md:max-w-lg w-full drop-shadow-2xl">
-      </div>
-      <div class="max-w-md mx-auto md:mx-0">
-        <div class="bg-[#0a2540] border border-[#ffd700]/20 rounded-3xl p-6 sm:p-8 shadow-2xl">
-          <div class="flex justify-between items-start mb-8">
-            <img src="isologo.png" alt="FD" class="h-24 sm:h-28 w-auto">
-            <div class="text-right">
-              <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#ffd700] to-amber-400 rounded-2xl flex items-center justify-center shadow-inner">
-                <i class="fa-solid fa-bolt text-4xl sm:text-5xl text-[#001f3f]"></i>
-              </div>
-              <div class="mt-3 text-[#ffd700] text-xs font-bold tracking-widest">18 AÑOS<br>EXPERIENCIA</div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#servicios" class="nav-link">SERVICIOS</a>
+                <a href="#metodologia" class="nav-link">METODOLOGÍA</a>
+                <a href="#normativa" class="nav-link">NORMATIVA</a>
+                <a href="#sobre-nosotros" class="nav-link">SOBRE NOSOTROS</a>
+                <a href="#contacto" class="nav-link">CONTACTO</a>
             </div>
-          </div>
-          <div class="gold-line mb-8"></div>
-          <p class="text-center text-sm font-medium tracking-widest text-white/80">
-            INSTALACIONES • REPARACIONES • NORMA VIGENTE
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- EXPERIENCIA -->
-  <section id="experiencia" class="py-16 md:py-20 bg-[#001426]">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <div class="inline-flex items-center gap-4 bg-[#ffd700] text-[#001f3f] px-8 py-4 rounded-3xl mb-8">
-        <i class="fa-solid fa-medal text-3xl"></i>
-        <span class="text-4xl font-bold">18 AÑOS</span>
-      </div>
-      <img src="isologo.png" alt="FD" class="mx-auto mb-8 w-44 md:w-52 opacity-90">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6">EXPERIENCIA QUE ILUMINA CONFIANZA</h2>
-      <p class="max-w-2xl mx-auto text-base md:text-lg text-white/80 px-4">
-        Más de 18 años ofreciendo soluciones eléctricas profesionales, seguras y de alta precisión en Comodoro Rivadavia y toda la zona sur.
-      </p>
-    </div>
-  </section>
+            <a href="https://wa.me/2974777265?text=Hola%20Fabi%C3%A1n!%20Me%20contacto%20desde%20tu%20p%C3%A1gina%20web.%20Estoy%20interesado%20en%20un%20servicio%20el%C3%A9ctrico%20y%20me%20gustar%C3%ADa%20coordinar%20una%20inspecci%C3%B3n%20inicial%20gratuita.%20Gracias!" target="_blank" class="bg-yellow-400 hover:bg-yellow-300 text-[#001f3f] px-6 py-3 rounded-3xl font-semibold flex items-center gap-2">
+                <i class="fab fa-whatsapp"></i> WHATSAPP
+            </a>
+        </div>
+    </nav>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="py-16 md:py-20">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="gold-line mx-auto w-24 mb-6"></div>
-      <h2 class="text-4xl font-bold text-center mb-3">NUESTROS SERVICIOS</h2>
-      <p class="text-[#ffd700] text-center mb-12">Soluciones eléctricas de alta precisión</p>
-      
-      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
-        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#ffd700]/50 transition-all group">
-          <i class="fa-solid fa-plug-circle-bolt text-5xl text-[#ffd700] mb-6 group-hover:scale-110 transition-transform"></i>
-          <h4 class="text-2xl font-semibold mb-3">Instalaciones Eléctricas</h4>
-          <p class="text-white/70">Nuevas instalaciones residenciales, comerciales e industriales cumpliendo norma vigente.</p>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#ffd700]/50 transition-all group">
-          <i class="fa-solid fa-screwdriver-wrench text-5xl text-[#ffd700] mb-6 group-hover:scale-110 transition-transform"></i>
-          <h4 class="text-2xl font-semibold mb-3">Reparaciones y Mantenimiento</h4>
-          <p class="text-white/70">Diagnóstico profesional y reparaciones rápidas de fallas eléctricas.</p>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#ffd700]/50 transition-all group">
-          <i class="fa-solid fa-shield-halved text-5xl text-[#ffd700] mb-6 group-hover:scale-110 transition-transform"></i>
-          <h4 class="text-2xl font-semibold mb-3">Auditorías Técnicas</h4>
-          <p class="text-white/70">Puestas a tierra, certificaciones y cumplimiento normativo completo.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- HERO -->
+    <header class="bg-[#001f3f] text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center bg-yellow-400 text-[#001f3f] text-xs font-bold px-5 py-2 rounded-3xl">PRESENTADO A EMPRESAS • CONSORCIOS • COMERCIOS</div>
+                <h1 class="hero-title text-5xl md:text-6xl leading-none font-semibold tracking-tighter">
+                    SOLUCIONES<br><span class="text-yellow-400">ELÉCTRICAS</span><br>DE ALTA PRECISIÓN
+                </h1>
+                <p class="text-xl text-white/80">Diagnóstico avanzado, instalaciones seguras y auditorías técnicas para empresas, consorcios y comercios.</p>
 
-  <!-- TARJETA DIGITAL - TOTALMENTE RESPONSIVE -->
-  <section id="contacto" class="py-16 md:py-20 bg-[#001426]">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <div class="gold-line mx-auto w-24 mb-6"></div>
-      <h2 class="text-4xl font-bold mb-12">TARJETA DIGITAL</h2>
-      
-      <div class="max-w-xl mx-auto bg-white text-[#001f3f] rounded-3xl overflow-hidden shadow-2xl">
-        <div class="bg-[#001f3f] text-[#ffd700] py-4 text-sm font-bold tracking-widest">FD SERVICIOS ELÉCTRICOS</div>
-        
-        <div class="p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
-          <div class="text-left">
-            <h3 class="text-5xl font-bold mb-2">Fabián Duarte</h3>
-            <p class="text-xl text-gray-600 mb-8">ELECTRICISTA</p>
-            <div class="space-y-6">
-              <a href="tel:2974777265" class="flex items-center gap-4 hover:text-[#ffd700] transition-colors">
-                <i class="fa-solid fa-phone text-3xl text-[#ffd700]"></i>
-                <div class="text-3xl font-semibold">(297) 477-7265</div>
-              </a>
-              <a href="mailto:fd.servicios.electricos.cr@gmail.com" class="flex items-center gap-4 hover:text-[#ffd700] transition-colors">
-                <i class="fa-solid fa-envelope text-3xl text-[#ffd700]"></i>
-                <div class="text-lg font-medium">fd.servicios.electricos.cr@gmail.com</div>
-              </a>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto" class="bg-yellow-400 hover:bg-yellow-300 text-[#001f3f] px-8 py-4 rounded-3xl font-semibold flex items-center justify-center gap-3">⚡ SOLICITAR INSPECCIÓN GRATUITA</a>
+                    <a href="https://wa.me/2974777265?text=Hola%20Fabi%C3%A1n!%20Me%20contacto%20desde%20tu%20p%C3%A1gina%20web.%20Estoy%20interesado%20en%20un%20servicio%20el%C3%A9ctrico%20y%20me%20gustar%C3%ADa%20coordinar%20una%20inspecci%C3%B3n%20inicial%20gratuita.%20Gracias!" target="_blank" class="border border-white/60 hover:bg-white/10 px-8 py-4 rounded-3xl font-semibold flex items-center justify-center gap-3">
+                        <i class="fab fa-whatsapp"></i> HABLA CON NOSOTROS
+                    </a>
+                </div>
+
+                <p class="italic text-white/80 text-xl">"La precisión es nuestra herramienta.<br><span class="font-semibold">Su seguridad, nuestro objetivo.</span>"</p>
             </div>
-          </div>
 
-          <!-- QR + Texto arriba -->
-          <div class="flex flex-col items-center">
-            <p class="text-xs text-gray-500 font-medium mb-4 text-center tracking-wider">ESCANEA PARA GUARDAR CONTACTO</p>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=195x195&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ADuarte%3BFabi%C3%A1n%0AORG%3AFD%20Servicios%20El%C3%A9ctricos%0ATITLE%3AElectricista%0ATEL%3A2974777265%0AEMAIL%3Afd.servicios.e
+            <div class="flex justify-center">
+                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-6 shadow-2xl border border-white/20">
+                    <img src="hero.jpg" alt="Fabián Duarte" class="hero-photo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BENEFICIOS -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="bg-yellow-400 text-[#001f3f] px-6 py-2 rounded-3xl text-sm font-bold">¿POR QUÉ ELEGIRNOS?</span>
+                <h2 class="text-4xl font-semibold mt-4">MIENTRAS OTROS <span class="text-yellow-400">ADIVINAN</span>,<br>NOSOTROS MEDIMOS.</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-card bg-white border border-gray-100 rounded-3xl p-8"><div class="text-4xl mb-6">📏</div><h3 class="text-xl font-semibold mb-3">DIAGNÓSTICO REAL</h3><p class="text-gray-600">Usamos instrumentos profesionales. Medimos, analizamos y confirmamos con datos reales.</p></div>
+                <div class="service-card bg-white border border-gray-100 rounded-3xl p-8"><div class="text-4xl mb-6">🛡️</div><h3 class="text-xl font-semibold mb-3">SEGURIDAD GARANTIZADA</h3><p class="text-gray-600">Cumplimos AEA e IRAM. Su instalación queda en regla.</p></div>
+                <div class="service-card bg-white border border-gray-100 rounded-3xl p-8"><div class="text-4xl mb-6">📄</div><h3 class="text-xl font-semibold mb-3">INFORMES TÉCNICOS</h3><p class="text-gray-600">Documentación profesional con mediciones, fotos y recomendaciones concretas.</p></div>
+                <div class="service-card bg-white border border-gray-100 rounded-3xl p-8"><div class="text-4xl mb-6">🔧</div><h3 class="text-xl font-semibold mb-3">PROLIJIDAD Y COMPROMISO</h3><p class="text-gray-600">Mismo cuidado en empresas y hogares particulares.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METODOLOGÍA -->
+    <section id="metodologia" class="py-20 bg-[#001f3f] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-semibold">NUESTRA FORMA DE TRABAJAR</h2>
+                <p class="text-yellow-400 text-2xl mt-2">METODOLOGÍA TÉCNICA</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="flex gap-5"><div class="w-12 h-12 bg-yellow-400 text-[#001f3f] rounded-2xl flex items-center justify-center text-3xl font-bold">1</div><div><h4 class="font-semibold text-xl">EVALUACIÓN</h4><p class="text-white/70">Inspección completa de la instalación existente.</p></div></div>
+                <div class="flex gap-5"><div class="w-12 h-12 bg-yellow-400 text-[#001f3f] rounded-2xl flex items-center justify-center text-3xl font-bold">2</div><div><h4 class="font-semibold text-xl">DETECCIÓN</h4><p class="text-white/70">Identificación del problema real con equipos de medición.</p></div></div>
+                <div class="flex gap-5"><div class="w-12 h-12 bg-yellow-400 text-[#001f3f] rounded-2xl flex items-center justify-center text-3xl font-bold">3</div><div><h4 class="font-semibold text-xl">MEDICIÓN</h4><p class="text-white/70">Verificación técnica con datos concretos y documentados.</p></div></div>
+                <div class="flex gap-5"><div class="w-12 h-12 bg-yellow-400 text-[#001f3f] rounded-2xl flex items-center justify-center text-3xl font-bold">4</div><div><h4 class="font-semibold text-xl">PROPUESTA</h4><p class="text-white/70">Explicación clara y presupuesto detallado sin sorpresas.</p></div></div>
+                <div class="flex gap-5"><div class="w-12 h-12 bg-yellow-400 text-[#001f3f] rounded-2xl flex items-center justify-center text-3xl font-bold">5</div><div><h4 class="font-semibold text-xl">EJECUCIÓN</h4><p class="text-white/70">Trabajo prolijo, seguro y bajo norma vigente.</p></div></div>
+                <div class="flex gap-5"><div class="w-12 h-12 bg-yellow-400 text-[#001f3f] rounded-2xl flex items-center justify-center text-3xl font-bold">6</div><div><h4 class="font-semibold text-xl">INFORME FINAL</h4><p class="text-white/70">Documentación técnica entregada al cliente.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS - 5 BLOQUES COMPLETOS -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-center mb-4">SERVICIOS ESPECIALIZADOS</h2>
+            <p class="text-center text-gray-600 mb-16">Soluciones integrales para hogares, comercios, empresas y consorcios</p>
+
+            <!-- Bloque 1 -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><span class="text-blue-600">🏠</span> BLOQUE 1 – SERVICIOS DOMICILIARIOS</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Instalaciones eléctricas completas y parciales</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cambio / instalación de tomas, llaves y puntos de luz</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cambio de lámparas y artefactos</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cableado nuevo y recableado</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Colocación de térmicas y disyuntores</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Puesta a tierra y medición</li></ul>
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Reparación de cortocircuitos y fallas ocultas</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Instalación de reflectores y luces exteriores</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cámaras WiFi básicas</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Porteros simples</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Redes WiFi y extensores</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cercos eléctricos domiciliarios</li></ul>
+                </div>
+            </div>
+
+            <!-- Bloque 2 -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><span class="text-amber-600">🏬</span> BLOQUE 2 – SERVICIOS COMERCIALES</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Instalaciones monofásicas y trifásicas</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Tableros comerciales completos</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Medición con megómetro y calidad de energía</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Iluminación LED comercial</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cámaras IP y redes</li></ul>
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Estabilizadores y UPS</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Servicio para calderas</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cableado de alta demanda</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cercos eléctricos comerciales</li></ul>
+                </div>
+            </div>
+
+            <!-- Bloque 3 -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><span class="text-red-600">🏭</span> BLOQUE 3 – SERVICIOS EMPRESARIALES</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Tableros trifásicos completos</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Contactores, diferenciales y relevadores</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Relevamiento eléctrico integral</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Redes estructuradas y racks</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Sistemas UPS para servidores</li></ul>
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cámaras IP + monitoreo</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Control de accesos</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Iluminación industrial LED</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cercos eléctricos perimetrales</li></ul>
+                </div>
+            </div>
+
+            <!-- Bloque 4 -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><span class="text-purple-600">🏢</span> BLOQUE 4 – CONSORCIOS Y EDIFICIOS</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Mantenimiento mensual o periódico</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Tableros generales del edificio</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Luces de emergencia</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Diagnóstico de bombas</li></ul>
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cámaras para áreas comunes</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Videoporteros y control de acceso</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cercos eléctricos perimetrales</li></ul>
+                </div>
+            </div>
+
+            <!-- Bloque 5 -->
+            <div>
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><span class="text-emerald-600">🔒</span> BLOQUE 5 – SISTEMAS DE SEGURIDAD Y ACCESOS</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Porteros eléctricos y videoporteros</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cerraduras magnéticas y eléctricas</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Control de acceso por huella, tarjeta o PIN</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cámaras IP y sistemas DVR/NVR</li></ul>
+                    <ul class="space-y-2"><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Sensores perimetrales</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Redes y WiFi para sistemas de seguridad</li><li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i>Cercos eléctricos de alta seguridad</li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NORMATIVA - REDISEÑADA SEGÚN TU IMAGEN -->
+    <section id="normativa" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-center mb-4">TRABAJAMOS BAJO <span class="text-yellow-400">NORMATIVA ARGENTINA</span></h2>
+            <p class="text-center text-gray-600 mb-12">Cada trabajo se realiza respetando las reglamentaciones vigentes</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-3xl flex items-start gap-4"><span class="text-3xl">📜</span><div><h4 class="font-semibold">REGLAMENTO AEA 90364</h4><p class="text-sm text-gray-600">Instalaciones eléctricas de baja tensión</p></div></div>
+                <div class="bg-gray-50 p-6 rounded-3xl flex items-start gap-4"><span class="text-3xl">🛡️</span><div><h4 class="font-semibold">LEY 19.587 - HIGIENE Y SEGURIDAD</h4><p class="text-sm text-gray-600">Condiciones de higiene y seguridad en el trabajo</p></div></div>
+                <div class="bg-gray-50 p-6 rounded-3xl flex items-start gap-4"><span class="text-3xl">📊</span><div><h4 class="font-semibold">PROTOCOLO SRT - ILUMINACIÓN</h4><p class="text-sm text-gray-600">Certificación de niveles de iluminación</p></div></div>
+                <div class="bg-gray-50 p-6 rounded-3xl flex items-start gap-4"><span class="text-3xl">🔌</span><div><h4 class="font-semibold">NORMAS IRAM</h4><p class="text-sm text-gray-600">Materiales y equipos certificados</p></div></div>
+                <div class="bg-gray-50 p-6 rounded-3xl flex items-start gap-4"><span class="text-3xl">📋</span><div><h4 class="font-semibold">DECRETO 351/79</h4><p class="text-sm text-gray-600">Condiciones mínimas de seguridad eléctrica</p></div></div>
+                <div class="bg-gray-50 p-6 rounded-3xl flex items-start gap-4"><span class="text-3xl">🏛️</span><div><h4 class="font-semibold">ORDENANZA MUNICIPAL</h4><p class="text-sm text-gray-600">Normativa local de Comodoro Rivadavia</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-center mb-4">¿QUÉ RECIBE EL CLIENTE?</h2>
+            <p class="text-center text-gray-600 mb-12">No solo mano de obra. Cada trabajo incluye documentación técnica profesional.</p>
+            
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="flex gap-6 bg-gray-50 p-6 rounded-3xl"><div class="text-4xl">📋</div><div><h4 class="font-semibold text-xl">INFORME TÉCNICO</h4><p class="text-gray-600">Diagnóstico documentado con mediciones reales y conclusiones claras.</p></div></div>
+                    <div class="flex gap-6 bg-gray-50 p-6 rounded-3xl"><div class="text-4xl">📸</div><div><h4 class="font-semibold text-xl">EVIDENCIA VISUAL</h4><p class="text-gray-600">Fotos antes/después y transparencia total.</p></div></div>
+                    <div class="flex gap-6 bg-gray-50 p-6 rounded-3xl"><div class="text-4xl">📈</div><div><h4 class="font-semibold text-xl">GRÁFICOS Y CERTIFICACIÓN</h4><p class="text-gray-600">Certificados para ART, AFIP y municipio.</p></div></div>
+                </div>
+
+                <div class="lg:col-span-5 bg-[#001f3f] text-white rounded-3xl p-8">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-yellow-400 rounded-2xl flex items-center justify-center text-4xl font-bold">FD</div>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Fabián Duarte</h3>
+                            <p class="text-yellow-400">Electricista - Responsable Técnico</p>
+                        </div>
+                    </div>
+                    <p class="text-white/90">No improvisamos. No adivinamos. Medimos, diagnosticamos y resolvemos con precisión y tecnología de última generación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 bg-[#001f3f] text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-5xl font-semibold mb-4">¿LISTO PARA TENER UNA INSTALACIÓN<br><span class="text-yellow-400">SEGURA Y EFICIENTE</span>?</h2>
+            <a href="https://wa.me/2974777265?text=Hola%20Fabi%C3%A1n!%20Me%20contacto%20desde%20tu%20p%C3%A1gina%20web.%20Estoy%20interesado%20en%20un%20servicio%20el%C3%A9ctrico%20y%20me%20gustar%C3%ADa%20coordinar%20una%20inspecci%C3%B3n%20inicial%20gratuita.%20Gracias!" target="_blank" class="inline-flex bg-yellow-400 hover:bg-yellow-300 text-[#001f3f] text-2xl font-bold px-12 py-6 rounded-3xl items-center gap-4">
+                <i class="fab fa-whatsapp text-4xl"></i> CONTACTAR POR WHATSAPP
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-12 border-t">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <picture>
+                <source srcset="logo.webp" type="image/webp">
+                <img src="logo.png" alt="FD Servicios Eléctricos" class="logo-footer mx-auto mb-6">
+            </picture>
+            <p class="font-medium text-xl text-gray-800">FD SERVICIOS ELÉCTRICOS</p>
+            <p class="text-gray-600">Comodoro Rivadavia, Chubut, Argentina • 2025</p>
+
+            <div class="flex justify-center gap-8 mt-8 text-4xl text-gray-700">
+                <a href="https://www.instagram.com/fdservicioselectricos" target="_blank" class="hover:text-yellow-400"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/1CmYArg2BF/" target="_blank" class="hover:text-yellow-400"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/2974777265?text=Hola%20Fabi%C3%A1n!%20Me%20contacto%20desde%20tu%20p%C3%A1gina%20web.%20Estoy%20interesado%20en%20un%20servicio%20el%C3%A9ctrico%20y%20me%20gustar%C3%ADa%20coordinar%20una%20inspecci%C3%B3n%20inicial%20gratuita.%20Gracias!" target="_blank" class="hover:text-yellow-400"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
